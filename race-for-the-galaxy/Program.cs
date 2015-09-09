@@ -10,6 +10,7 @@ namespace race_for_the_galaxy
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello Worlds....in race for the galaxy");
         }
     }
 }
