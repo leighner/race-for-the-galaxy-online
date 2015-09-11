@@ -5,7 +5,7 @@ using race_for_the_galaxy.Core;
 
 namespace race_for_the_galaxy.CardBehavior
 {
-    class DevelopDiscount : ICardBehavior
+    public class DevelopDiscount : ICardBehavior
     {
         private byte mDiscount;
 

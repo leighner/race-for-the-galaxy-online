@@ -7,7 +7,7 @@ using race_for_the_galaxy.Core;
 
 namespace race_for_the_galaxy.CardBehavior
 {
-    class PrePhasePickup : ICardBehavior
+    public class PrePhasePickup : ICardBehavior
     {
         private sbyte mDrawNumber;
         private Phase mPhase;

@@ -3,7 +3,7 @@ using System;
 
 namespace Core.race_for_the_galaxy
 {
-    class CardData : ICardData
+    public class CardData : ICardData
     {
         public int BaseCost
         {

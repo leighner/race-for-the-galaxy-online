@@ -2,7 +2,7 @@
 
 namespace race_for_the_galaxy.CardBehavior
 {
-    class StandardExploreBonus : ICardBehavior
+    public class StandardExploreBonus : ICardBehavior
     {
         private byte mDiscard;
         private byte mDraw;

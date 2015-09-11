@@ -2,7 +2,7 @@
 
 namespace race_for_the_galaxy
 {
-    interface ICardData
+    public interface ICardData
     {
         int BaseValue
         {

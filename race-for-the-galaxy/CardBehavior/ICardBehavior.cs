@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace race_for_the_galaxy.CardBehavior
 {
-    interface ICardBehavior
+    public interface ICardBehavior
     {
         Phase PhaseTrigger { get; }
     }

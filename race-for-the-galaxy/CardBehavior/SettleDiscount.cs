@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using race_for_the_galaxy.Core;
 
 namespace race_for_the_galaxy.CardBehavior
 {
-    class SettleDiscount : ICardBehavior
+    public class SettleDiscount : ICardBehavior
     {
 
         internal SettleDiscount(int discountAmount, IEnumerable<GoodType> applicableGoodTypes)

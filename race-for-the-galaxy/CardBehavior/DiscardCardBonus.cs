@@ -7,7 +7,7 @@ using race_for_the_galaxy.Core;
 
 namespace race_for_the_galaxy.CardBehavior
 {
-    class DiscardCardBonus : ICardBehavior
+    public class DiscardCardBonus : ICardBehavior
     {
         private IEnumerable<Bonus> mBonuses;
         private byte mMaxDiscard;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace race_for_the_galaxy.Core
 {
-    enum Bonus
+    public enum Bonus
     {
         Card,
         VPChip

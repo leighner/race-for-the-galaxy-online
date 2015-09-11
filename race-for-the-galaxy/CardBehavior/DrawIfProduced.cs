@@ -7,7 +7,7 @@ using race_for_the_galaxy.Core;
 
 namespace race_for_the_galaxy.CardBehavior
 {
-    class DrawIfProduced : ICardBehavior
+    public class DrawIfProduced : ICardBehavior
     {
         private GoodType mGood;
 

@@ -7,7 +7,7 @@ using race_for_the_galaxy.Core;
 
 namespace race_for_the_galaxy.CardBehavior
 {
-    class StandardConsumeBonus : ICardBehavior
+    public class StandardConsumeBonus : ICardBehavior
     {
         private IEnumerable<Bonus> mBonuses;
         private IEnumerable<GoodType> mGoodTypes;

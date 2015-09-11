@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace race_for_the_galaxy.Core
 {
-    public enum CardClass
+    public enum CardType
     {
-        Rebel,
-        Imperial,
-        Gene,
+        Development,
+        World
     }
 }

@@ -7,7 +7,7 @@ using race_for_the_galaxy.Core;
 
 namespace race_for_the_galaxy.CardBehavior
 {
-    class DiscardAllGoodsGainVPMinusOne : ICardBehavior
+    public class DiscardAllGoodsGainVPMinusOne : ICardBehavior
     {
 
         public DiscardAllGoodsGainVPMinusOne()

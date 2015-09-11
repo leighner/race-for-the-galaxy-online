@@ -7,16 +7,26 @@ using race_for_the_galaxy.Core;
 
 namespace race_for_the_galaxy.CardBehavior
 {
-    class GoodsProductionBonus : ICardBehavior
+    public class GoodsProductionBonus : ICardBehavior
     {
         private IEnumerable<Bonus> mBonusPerProduced;
         private GoodType mGoodType;
+        private bool mIncludeWindfall;
 
-        public GoodsProductionBonus(GoodType goodType, IEnumerable<Bonus> bonusPerProduced)
+        public GoodsProductionBonus(GoodType goodType, IEnumerable<Bonus> bonusPerProduced, bool includeWindfall = false)
         {
 
             GoodType = goodType;
             BonusPerProduced = bonusPerProduced;
+            mIncludeWindfall = includeWindfall;
+        }
+
+        public bool IncludeWindfall
+        {
+            get
+            {
+                return mIncludeWindfall;
+            }
         }
 
         public Phase PhaseTrigger
@@ -27,7 +37,7 @@ namespace race_for_the_galaxy.CardBehavior
             }
         }
 
-        internal IEnumerable<Bonus> BonusPerProduced
+        public IEnumerable<Bonus> BonusPerProduced
         {
             get
             {

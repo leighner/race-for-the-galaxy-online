@@ -8,7 +8,7 @@ using race_for_the_galaxy.Core;
 namespace race_for_the_galaxy.CardBehavior
 {
 
-    class BonusTradeAction : ICardBehavior
+    public class BonusTradeAction : ICardBehavior
     {
         private bool mApplyTradeBonuses;
 
