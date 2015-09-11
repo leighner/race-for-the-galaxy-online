@@ -43,12 +43,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CardBehavior\BonusTradeAction.cs" />
+    <Compile Include="CardBehavior\DevelopDiscount.cs" />
+    <Compile Include="CardBehavior\DiscardAllGoodsGainVPMinusOne.cs" />
+    <Compile Include="CardBehavior\DiscardCardBonus.cs" />
+    <Compile Include="CardBehavior\DrawIfProduced.cs" />
+    <Compile Include="CardBehavior\GameEndBonusCard.cs" />
+    <Compile Include="CardBehavior\GoodsProductionBonus.cs" />
+    <Compile Include="CardBehavior\ICardBehavior.cs" />
+    <Compile Include="CardBehavior\MilitaryBonus.cs" />
+    <Compile Include="CardBehavior\PostPhaseActionBonus.cs" />
+    <Compile Include="CardBehavior\PrePhasePickup.cs" />
+    <Compile Include="CardBehavior\ProduceOnWindfall.cs" />
+    <Compile Include="CardBehavior\SettleDiscount.cs" />
+    <Compile Include="CardBehavior\StandardConsumeBonus.cs" />
+    <Compile Include="CardBehavior\StandardExploreBonus.cs" />
+    <Compile Include="CardBehavior\TradeBonus.cs" />
+    <Compile Include="Core\Bonus.cs" />
+    <Compile Include="Core\CardData.cs" />
+    <Compile Include="GameData\Tableau.cs" />
+    <Compile Include="Core\CardClass.cs" />
+    <Compile Include="Core\GoodType.cs" />
+    <Compile Include="Core\Phase.cs" />
+    <Compile Include="Core\ICardData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
