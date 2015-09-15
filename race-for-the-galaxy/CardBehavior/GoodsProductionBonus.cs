@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using race_for_the_galaxy.Core;
+using race_for_the_galaxy.CardBehavior.Interfaces;
+using Core.race_for_the_galaxy;
 
 namespace race_for_the_galaxy.CardBehavior
 {
-    public class GoodsProductionBonus : ICardBehavior
+    public class GoodsProductionBonus : ICardBehavior, IPostPhaseBonus
     {
         private IEnumerable<Bonus> mBonusPerProduced;
         private GoodType mGoodType;
@@ -61,6 +63,11 @@ namespace race_for_the_galaxy.CardBehavior
             {
                 mGoodType = value;
             }
+        }
+
+        public int PostPhaseDrawBonus(IEnumerable<CardData> cardsBought, IEnumerable<CardData> cardsConsumed)
+        {
+            throw new NotImplementedException();
         }
     }
 }

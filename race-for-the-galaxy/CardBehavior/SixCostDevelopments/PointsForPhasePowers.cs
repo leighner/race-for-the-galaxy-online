@@ -13,7 +13,6 @@ namespace race_for_the_galaxy.CardBehavior.SixCostDevelopments
             mPointsPerCard = pointsPerCard;
             mPhase = phase;
             mCardType = cardType;
-
         }
 
         public CardType CardType

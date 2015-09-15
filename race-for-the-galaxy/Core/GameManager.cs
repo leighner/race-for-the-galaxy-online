@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace race_for_the_galaxy.Core
 {
-    public interface ICardData
+    public class GameManager
     {
+        private RftgGame mGame;
+
+        public GameManager(RftgGame game)
+        {
+            mGame = game;
+        }
+
+
+
     }
 }

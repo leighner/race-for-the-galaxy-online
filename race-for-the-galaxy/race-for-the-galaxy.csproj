@@ -48,10 +48,14 @@
     <Compile Include="CardBehavior\DiscardAllGoodsGainVPMinusOne.cs" />
     <Compile Include="CardBehavior\DiscardCardBonus.cs" />
     <Compile Include="CardBehavior\DrawIfProduced.cs" />
+    <Compile Include="CardBehavior\Interfaces\IDiscount.cs" />
+    <Compile Include="CardBehavior\Interfaces\ITradeBonus.cs" />
+    <Compile Include="CardBehavior\Interfaces\IPostPhaseBonus.cs" />
+    <Compile Include="CardBehavior\ProductionWorld.cs" />
     <Compile Include="CardBehavior\SixCostDevelopments\IEndGamePointBonus.cs" />
     <Compile Include="CardBehavior\GoodsProductionBonus.cs" />
-    <Compile Include="CardBehavior\ICardBehavior.cs" />
-    <Compile Include="CardBehavior\MilitaryBonus.cs" />
+    <Compile Include="CardBehavior\Interfaces\ICardBehavior.cs" />
+    <Compile Include="CardBehavior\MilitaryPower.cs" />
     <Compile Include="CardBehavior\PostPhaseActionBonus.cs" />
     <Compile Include="CardBehavior\PrePhasePickup.cs" />
     <Compile Include="CardBehavior\ProduceOnWindfall.cs" />
@@ -68,17 +72,22 @@
     <Compile Include="CardBehavior\StandardConsumeBonus.cs" />
     <Compile Include="CardBehavior\StandardExploreBonus.cs" />
     <Compile Include="CardBehavior\TradeBonus.cs" />
+    <Compile Include="CardBehavior\WindfallProductionWorld.cs" />
     <Compile Include="Core\Bonus.cs" />
     <Compile Include="Core\CardData.cs" />
     <Compile Include="Core\CardType.cs" />
     <Compile Include="Core\Faction.cs" />
+    <Compile Include="Core\GameManager.cs" />
+    <Compile Include="Core\ICardData.cs" />
+    <Compile Include="Core\Player.cs" />
+    <Compile Include="Core\RftgGame.cs" />
     <Compile Include="GameData\Tableau.cs" />
     <Compile Include="Core\CardClass.cs" />
     <Compile Include="Core\GoodType.cs" />
     <Compile Include="Core\Phase.cs" />
-    <Compile Include="Core\ICardData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

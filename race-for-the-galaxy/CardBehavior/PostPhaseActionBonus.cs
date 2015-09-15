@@ -1,4 +1,8 @@
-﻿using race_for_the_galaxy.Core;
+﻿using System;
+using System.Collections.Generic;
+using Core.race_for_the_galaxy;
+using race_for_the_galaxy.CardBehavior.Interfaces;
+using race_for_the_galaxy.Core;
 
 namespace race_for_the_galaxy.CardBehavior
 {
@@ -6,7 +10,7 @@ namespace race_for_the_galaxy.CardBehavior
     /// <summary>
     /// If player does an develop or settle action, they draw x cards
     /// </summary>
-    public class PostPhaseActionBonus : ICardBehavior
+    public class PostPhaseActionBonus : ICardBehavior, IPostPhaseBonus
     {
         private Phase mPhase;
 
@@ -21,6 +25,11 @@ namespace race_for_the_galaxy.CardBehavior
             {
                 return mPhase;
             }
+        }
+
+        public int PostPhaseDrawBonus(IEnumerable<CardData> cardsBought, IEnumerable<CardData> cardsConsumed)
+        {
+            throw new NotImplementedException();
         }
     }
 }

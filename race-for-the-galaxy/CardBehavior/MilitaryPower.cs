@@ -7,7 +7,7 @@ using race_for_the_galaxy.Core;
 
 namespace race_for_the_galaxy.CardBehavior
 {
-    public class MilitaryBonus : ICardBehavior
+    public class MilitaryPower : ICardBehavior
     {
         private bool mAgainstRebelOnly;
         private int mMilitaryBonusAmount;
@@ -20,7 +20,7 @@ namespace race_for_the_galaxy.CardBehavior
         /// <param name="militaryBonusAmount">can be positive or negative </param>
         /// <param name="phase"></param>
         /// <param name="againstRebelOnly"></param>
-        internal MilitaryBonus(sbyte militaryBonusAmount, Phase phase, bool againstRebelOnly = false)
+        internal MilitaryPower(sbyte militaryBonusAmount, Phase phase, bool againstRebelOnly = false)
         {
             mMilitaryBonusAmount = militaryBonusAmount;
             mPhase = phase;

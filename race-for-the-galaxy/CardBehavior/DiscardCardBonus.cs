@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using race_for_the_galaxy.Core;
+using race_for_the_galaxy.CardBehavior.Interfaces;
+using Core.race_for_the_galaxy;
 
 namespace race_for_the_galaxy.CardBehavior
 {
-    public class DiscardCardBonus : ICardBehavior
+    public class DiscardCardBonus : ICardBehavior, IDiscount
     {
         private IEnumerable<Bonus> mBonuses;
         private byte mMaxDiscard;
@@ -50,6 +49,11 @@ namespace race_for_the_galaxy.CardBehavior
             {
                 return Phase.Consume;
             }
+        }
+
+        public int DiscountAmount(CardData card)
+        {
+            throw new NotImplementedException();
         }
     }
 }
